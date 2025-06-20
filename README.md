@@ -40,7 +40,7 @@ If you need a GPU, run the command
 
 Due to a technical issue, for your job to properly take GPUs into account you will need to enter this command as soon as you connect to a compute node
 
-``` export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS ```
+``` export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS ```
 
 Both commands will open a terminal on a compute node.
 
