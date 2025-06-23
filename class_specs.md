@@ -4,10 +4,10 @@ To know the basics, connected to Juliet itself and know the advice for all conta
 
 ## Monday, June 23rd
 
-### Welcome, Gray Scott Introduction, CPU Architecture, Vectorization VS Parallelization
+### __Welcome, Gray Scott Introduction, CPU Architecture, Vectorization VS Parallelization__
 There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
 
-### Compiler optimisation
+### __Compiler optimisation__
 Class : https://cta-lapp.pages.in2p3.fr/COURS/COMPILER_OPTIMISATION/index.html
 Run container: 
 ```
@@ -18,7 +18,7 @@ OR
 apptainer shell /projects/m25065-students/containers/compiler.sif
 ```
 
-### Did you say Unit Testing ?
+### __Did you say Unit Testing ?__
 There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
 
 ## Tuesday, June 24th
