@@ -8,22 +8,41 @@ To know the basics, connected to Juliet itself and know the advice for all conta
 There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
 
 ### Compiler optimisation
-__Class__ : https://cta-lapp.pages.in2p3.fr/COURS/COMPILER_OPTIMISATION/index.html
-Run container: 
+Class : https://cta-lapp.pages.in2p3.fr/COURS/COMPILER_OPTIMISATION/index.html
+Run container on Juliet: 
 ```
 apptainer shell /projects/m25065-students/containers/compiler.sif
 ```
 OR
 ```
-apptainer shell /projects/m25065-students/containers/compiler.sif
+bash /projects/m25065-students/scripts/compiler.sh
 ```
 
-### __Did you say Unit Testing ?__
+### Did you say Unit Testing ?
 There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
 
 ## Tuesday, June 24th
-TBA
+### C++ 17/20/23 on CPU (and pyramid)
+Class : https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
+Run container on Juliet: 
+```
+apptainer shell /projects/m25065-students/containers/cpp_on_cpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/cpp_on_cpu.sh
+```
 
+### C++ 17/20/23 on CPU (and pyramid)
+Class : https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
+Run container on Juliet: 
+```
+apptainer shell /projects/m25065-students/containers/cpp_on_cpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/cpp_on_cpu.sh
+```
 ## Wednesday, June 25th
 TBA
 
