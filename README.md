@@ -1,5 +1,6 @@
 
 # Attend GrayScott school with Juliet
+These pages are here to help you use the Juliet cluster for the GrayScott school. If you run into any trouble, do not hesitate to ask questions on school #romeo-support channel on the official Gray Scott Schoot server.
 
 ## Connect to juliet
 You have received a login and password by e-mail. You may connect to juliet using these logins and password by typing in a command prompt (ex: PowerShell for windows)
