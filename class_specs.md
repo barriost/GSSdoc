@@ -7,7 +7,7 @@ To know the basics, connected to Juliet itself and know the advice for all conta
 ### __Welcome, Gray Scott Introduction, CPU Architecture, Vectorization VS Parallelization__
 There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
 
-### <u> Compiler optimisation__ </u>
+### Compiler optimisation
 __Class__ : https://cta-lapp.pages.in2p3.fr/COURS/COMPILER_OPTIMISATION/index.html
 Run container: 
 ```
