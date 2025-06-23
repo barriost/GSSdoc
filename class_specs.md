@@ -8,7 +8,7 @@ To know the basics, connected to Juliet itself and know the advice for all conta
 There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
 
 ### __Compiler optimisation__
-Class : https://cta-lapp.pages.in2p3.fr/COURS/COMPILER_OPTIMISATION/index.html
+__Class__ : https://cta-lapp.pages.in2p3.fr/COURS/COMPILER_OPTIMISATION/index.html
 Run container: 
 ```
 apptainer shell /projects/m25065-students/containers/compiler.sif
