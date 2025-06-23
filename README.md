@@ -14,7 +14,9 @@ Then, enter your password when prompt. Your typing may not show on your terminal
 
 Most of the classes use apptainer containers. These containers are on the directory /projects/m25065/containers/
 
-The file at path `/projects/m25065-students/container_list.txt` contains the association between a class and a container
+The file at path `/projects/m25065-students/container_list.txt` contains the association between a class and a container.
+
+You can also access specific instructions for each class [here](https://github.com/barriost/GSSdoc/blob/main/class_specs.md)
 
 ## Connect to a compute node
 
