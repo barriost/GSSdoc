@@ -21,9 +21,6 @@ apptainer shell /projects/m25065-students/containers/compiler.sif
 ### Did you say Unit Testing ?
 There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
 
-## Monday, June 23rd
-TBA
-
 ## Tuesday, June 24th
 TBA
 
