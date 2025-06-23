@@ -80,7 +80,19 @@ bash /projects/m25065-students/scripts/mem_profiling.sh
 
 
 ## Thursday, June 26th
-TBA
+### Rust on CPU 
+Class: https://gitlab.in2p3.fr/grasland/grayscott-with-rust 
+
+/!\ Apptainer is not recommended for the rust classes, we will be using podman. Remember the allocation request is different for podman
+
+Run container on Juliet: 
+```
+podman run --rm -it docker://gitlab-registry.in2p3.fr/grasland/numerical-rust-cpu/rust_light:latest /bin/bash
+```
+OR
+```
+bash /projects/m25065-students/scripts/rust.sh
+```
 
 ## Friday, June 27th
 TBA
