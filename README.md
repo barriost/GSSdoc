@@ -59,15 +59,21 @@ With a few exceptions containers have not been tested with podman so choose this
 
 If you want to use podman use `salloc` instead of `srun`
 
-``` salloc  --reservation=grayscott --partition=mesonet --account=m25065-students --time=10:00:00 -c 16 --mem=64G ```
+``` 
+salloc  --reservation=grayscott --partition=mesonet --account=m25065-students --time=10:00:00 -c 16 --mem=64G
+ ```
 
 OR
 
-``` salloc --reservation=grayscott --partition=mesonet --account=m25065-students --time=10:00:00 --mem=64G --gres=gpu:1 ```
+``` 
+salloc --reservation=grayscott --partition=mesonet --account=m25065-students --time=10:00:00 --mem=64G --gres=gpu:1
+ ```
 
 then
 
-``` ssh julietX```
+```
+ssh julietX
+```
 
 where julietX can be `juliet2`, `juliet3` or `juliet4`
 
@@ -78,10 +84,16 @@ where julietX can be `juliet2`, `juliet3` or `juliet4`
 
 To run the containers you can run the command
 
-``` apptainer shell path/to/container.sif ```
+``` 
+apptainer shell path/to/container.sif
+```
 
 Alternatively, you can run a bash script that will do it for you. Bash scripts for classes are available at
 
-` bash /projects/m25065-students/scripts/ ` and have the same name as the container with .sh instead of .sif
+``` 
+bash /projects/m25065-students/scripts/
+```
+
+and have the same name as the container with .sh instead of .sif
 
 ** /!\ MAKE SURE YOU ARE CONNECTED TO A COMPUTE NODE BEFORE STARTING A CONTAINER OR A SCRIPT /!\ **
