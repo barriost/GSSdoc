@@ -85,8 +85,8 @@ bash /projects/m25065-students/scripts/mem_profiling.sh
 ```  
 
 
-## Thursday, June 26th
-### Rust on CPU 
+# Thursday, June 26th
+## Rust on CPU 
 Class: https://gitlab.in2p3.fr/grasland/grayscott-with-rust 
 
 /!\ Apptainer is not recommended for the rust classes, we will be using podman. Remember the allocation request is different for podman
@@ -100,13 +100,13 @@ OR
 bash /projects/m25065-students/scripts/rust.sh
 ```
 
-## Friday, June 27th
-### Python on CPU
+# Friday, June 27th
+## Python on CPU
 Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
 This class uses Jupyter Lab, which will provide a web interface with the backend running on Juliet. You will need to use your own computer to visualize the interface.
 We recommend you clone the repository before starting the container as the script version will not allow you to do it later, lest you open another terminal.
 
-#### Start container and Jupyter lab on Juliet
+### Start container and Jupyter lab on Juliet
 
 ```
 apptainer shell  --bind=/projects/m25065-students/scripts/jupyter_start.sh:/scripts/jupyter_start.sh /projects/m25065-students/containers/mem_profiling.sif
@@ -123,7 +123,7 @@ OR
 bash /projects/m25065-students/scripts/python_cpu.sh
 ```
 
-#### Access the notebook from your own laptop computer
+### Access the notebook from your own laptop computer
 
 Once you get Jupyter running, you will see a line starting with ` http://localhost:8xxx/lab?token=`
 Note the 8xxx number and the line (token included)
@@ -142,17 +142,17 @@ Finally, open your web browser and copy/paste the entire ` http://localhost:8xxx
 The jupyter interface should open soon.
 
 In case of any issue, do not hesitate to ask for help in the #romeo-support channel of the Gray Scott School Discord Server
-## Monday, June 30th
+# Monday, June 30th
 TBA
 
-## Tuesday, July 1st
+# Tuesday, July 1st
 TBA
 
-## Wednesday, July 2nd
+# Wednesday, July 2nd
 TBA
 
-## Thursday, July 3rd
+# Thursday, July 3rd
 TBA
 
-## Friday, July 4th
+# Friday, July 4th
 TBA
