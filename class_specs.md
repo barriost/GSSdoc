@@ -2,6 +2,8 @@
 Here are the per-class specification to run your containers on the Juliet machine of the ROMEO computing center. These are modification that are required for everything to go smoothly on our cluster and are different from teacher specifications.
 To know the basics, connected to Juliet itself and know the advice for all containers, please refer to [this file](https://github.com/barriost/GSSdoc/blob/main/README.md).
 
+Reminder that all apptainer or bash commands
+
 # Monday, June 23rd
 
 ## __Welcome, Gray Scott Introduction, CPU Architecture, Vectorization VS Parallelization__
@@ -9,7 +11,7 @@ There is no container. Please follow teacher instructions. If running code is re
 
 ## Compiler optimisation
 Class : https://cta-lapp.pages.in2p3.fr/COURS/COMPILER_OPTIMISATION/index.html
-Run container on Juliet: 
+Run container on Juliet (on a compute node): 
 ```
 apptainer shell /projects/m25065-students/containers/compiler.sif
 ```
@@ -24,7 +26,7 @@ There is no container. Please follow teacher instructions. If running code is re
 # Tuesday, June 24th
 ## C++ 17/20/23 on CPU (and pyramid)
 Class : https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
-Run container on Juliet: 
+Run container on Juliet (on a compute node):: 
 ```
 apptainer shell /projects/m25065-students/containers/cpp_on_cpu.sif
 ```
@@ -35,7 +37,7 @@ bash /projects/m25065-students/scripts/cpp_on_cpu.sh
 
 ## C++ 17/20/23 on CPU (and pyramid)
 Class : https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
-Run container on Juliet: 
+Run container on Juliet (on a compute node):: 
 ```
 apptainer shell /projects/m25065-students/containers/cpp_on_cpu.sif
 ```
@@ -52,7 +54,7 @@ cp -r /home/Examples /path/to/the/desired/directory
 # Wednesday, June 25th
 ## Performance with stencil in Sycl 
 Class : https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/
-Run container on Juliet: 
+Run container on Juliet (on a compute node):: 
 ```
 apptainer shell /projects/m25065-students/containers/cpp_on_cpu.sif
 ```
@@ -75,7 +77,7 @@ TBA
 
 ### Memory Profiling 
 Class : 
-Run container on Juliet: 
+Run container on Juliet (on a compute node):: 
 ```
 apptainer shell /projects/m25065-students/containers/mem_profiling.sif
 ```
@@ -91,7 +93,7 @@ Class: https://gitlab.in2p3.fr/grasland/grayscott-with-rust
 
 /!\ Apptainer is not recommended for the rust classes, we will be using podman. Remember the allocation request is different for podman
 
-Run container on Juliet: 
+Run container on Juliet (on a compute node):: 
 ```
 podman run --rm -it docker://gitlab-registry.in2p3.fr/grasland/numerical-rust-cpu/rust_light:latest /bin/bash
 ```
@@ -104,9 +106,9 @@ bash /projects/m25065-students/scripts/rust.sh
 ## Python on CPU
 Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
 This class uses Jupyter Lab, which will provide a web interface with the backend running on Juliet. You will need to use your own computer to visualize the interface.
-We recommend you clone the repository before starting the container as the script version will not allow you to do it later, lest you open another terminal.
+We recommend you clone the repository before starting the container as the container does not include git 
 
-### Start container and Jupyter lab on Juliet
+### Start container and Jupyter lab on Juliet (on a compute node):
 
 ```
 apptainer shell  --bind=/projects/m25065-students/scripts/jupyter_start.sh:/scripts/jupyter_start.sh /projects/m25065-students/containers/mem_profiling.sif
@@ -123,7 +125,7 @@ OR
 bash /projects/m25065-students/scripts/python_cpu.sh
 ```
 
-### Access the notebook from your own laptop computer
+### Access the notebook from your own laptop computer (ON YOUR OWN MACHINE)
 
 Once you get Jupyter running, you will see a line starting with ` http://localhost:8xxx/lab?token=`
 Note the 8xxx number and the line (token included)
