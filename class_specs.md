@@ -43,6 +43,12 @@ OR
 ```
 bash /projects/m25065-students/scripts/cpp_on_cpu.sh
 ```
+
+The source code for this class is inside the container at /home/Examples. It can be copied to your directory with the cp command
+
+```
+cp -r /home/Examples /path/to/the/desired/directory
+```
 # Wednesday, June 25th
 ## Performance with stencil in Sycl 
 Class : https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/
