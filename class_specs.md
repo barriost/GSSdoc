@@ -24,16 +24,6 @@ bash /projects/m25065-students/scripts/compiler.sh
 There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
 
 # Tuesday, June 24th
-## C++ 17/20/23 on CPU (and pyramid)
-Class : https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
-Run container on Juliet (on a compute node):: 
-```
-apptainer shell /projects/m25065-students/containers/cpp_on_cpu.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/cpp_on_cpu.sh
-```
 
 ## C++ 17/20/23 on CPU (and pyramid)
 Class : https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
