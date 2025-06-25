@@ -113,21 +113,25 @@ We recommend you clone the repository before starting the container as the conta
 
 ### Start container and Jupyter lab on Juliet (on a compute node):
 
-```
-apptainer shell  --bind=/projects/m25065-students/scripts/jupyter_start.sh:/scripts/jupyter_start.sh /projects/m25065-students/containers/mem_profiling.sif
-```
-then start the jupyter lab container with the script we provided
+- You can use Apptainer to start the container
 
-```
-bash /scripts/jupyter_start.sh
-```
-The script will open the jupyter lab on a port that isn't already in use. Note the number of the port
+  ```
+  apptainer shell  --bind=/projects/m25065-students/scripts/jupyter_start.sh:/scripts/jupyter_start.sh /projects/m25065-students/containers/mem_profiling.sif
+  ```
+  then start the jupyter lab container with the script we provided
+  
+  ```
+  bash /scripts/jupyter_start.sh
+  ```
+  The script will open the jupyter lab on a port that isn't already in use. Note the number of the port
 
 OR
 
-```
-bash /projects/m25065-students/scripts/python_cpu.sh
-```
+- ALternatively, you can use our script:
+  
+  ```
+  bash /projects/m25065-students/scripts/python_cpu.sh
+  ```
 
 ### Access the notebook from your own laptop computer (ON YOUR OWN MACHINE)
 
