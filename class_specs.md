@@ -72,10 +72,10 @@ Example:
 ./coliru.bash acpp cpu
 ```
 
-### Performance with stencil in Fortran
+## Performance with stencil in Fortran
 TBA
 
-### Memory Profiling 
+## Memory Profiling 
 Class : 
 Run container on Juliet (on a compute node):: 
 ```
