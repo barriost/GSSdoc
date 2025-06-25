@@ -56,11 +56,11 @@ cp -r /home/Examples /path/to/the/desired/directory
 Class : https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/
 Run container on Juliet (on a compute node):: 
 ```
-apptainer shell /projects/m25065-students/containers/cpp_on_cpu.sif
+apptainer shell /projects/m25065-students/containers/stencil_sycl.sif
 ```
 OR
 ```
-bash /projects/m25065-students/scripts/cpp_on_cpu.sh
+bash /projects/m25065-students/scripts/stencil_sycl.sh
 ```
 */!\ Juliet uses the Adaptive CPP version of the container. Please mention it if you report an issue to the teacher /!\\*
 
