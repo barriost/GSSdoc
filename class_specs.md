@@ -153,16 +153,77 @@ The jupyter interface should open soon.
 
 In case of any issue, do not hesitate to ask for help in the #romeo-support channel of the Gray Scott School Discord Server
 # Monday, June 30th
-TBA
+## C++ 20 Computing with Eve + Kiwaku
+Class: https://events.codereckons.com/
 
+Run container on Juliet (on a compute node):
+```
+apptainer shell /projects/m25065-students/containers/eve_kiwaku.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/eve_kiwaku.sh
+```
+
+## C++17/20/23 on GPU with NVC++
+Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
+
+Run container on Juliet (on a compute node):
+```
+apptainer shell /projects/m25065-students/containers/cpp_on_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/cpp_on_gpu.sh
+```
+
+## Optimisation Cubic Root
+Class: https://cta-lapp.pages.in2p3.fr/COURS/OPTIMISATION_RACINE_CUBIQUE/
+
+Run container on Juliet (on a compute node):
+```
+apptainer shell /projects/m25065-students/containers/cubic_root.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/cubic_root.sh
+```
 # Tuesday, July 1st
-TBA
+## Sycl on GPU
+Class: https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/GrayScottSyclSetup/-/blob/main/README.md?ref_type=heads
 
+Run container on Juliet (on a compute node):
+```
+apptainer shell /projects/m25065-students/containers/sycl_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/sycl_gpu.sh
+```
+## Performance with stencil in Fortran
+Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
+
+Run container on Juliet (on a compute node):
+```
+apptainer shell /projects/m25065-students/containers/fortran_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/fortran_gpu.sh
+```  
 # Wednesday, July 2nd
-TBA
+## Rust on GPU:
+Class:  https://gitlab.in2p3.fr/grasland/numerical-rust-gpu
+
+Run container on Juliet (on a compute node):
+```
+apptainer shell /projects/m25065-students/containers/rust_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/rust_gpu.sh
+```  
 
 # Thursday, July 3rd
 TBA
 
-# Friday, July 4th
-TBA
