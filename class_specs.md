@@ -1,46 +1,10 @@
 # Class specification
 Here are the per-class specification to run your containers on the Juliet machine of the ROMEO computing center. These are modification that are required for everything to go smoothly on our cluster and are different from teacher specifications.
+For classes that were given on the previous days, see [this file.](https://github.com/barriost/GSSdoc/edit/main/passed_class_specs)
 To know the basics, connected to Juliet itself and know the advice for all containers, please refer to [this file](https://github.com/barriost/GSSdoc/blob/main/README.md).
 
-Reminder that all apptainer or bash commands
+Reminder that all apptainer or bash commands need to be run on compute nodes.
 
-# Monday, June 23rd
-
-## __Welcome, Gray Scott Introduction, CPU Architecture, Vectorization VS Parallelization__
-There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
-
-## Compiler optimisation
-Class : https://cta-lapp.pages.in2p3.fr/COURS/COMPILER_OPTIMISATION/index.html
-Run container on Juliet (on a compute node): 
-```
-apptainer shell /projects/m25065-students/containers/compiler.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/compiler.sh
-```
-
-## Did you say Unit Testing ?
-There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
-
-# Tuesday, June 24th
-
-## C++ 17/20/23 on CPU (and pyramid)
-Class : https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
-Run container on Juliet (on a compute node):: 
-```
-apptainer shell /projects/m25065-students/containers/cpp_on_cpu.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/cpp_on_cpu.sh
-```
-
-The source code for this class is inside the container at /home/Examples. It can be copied to your directory with the cp command
-
-```
-cp -r /home/Examples /path/to/the/desired/directory
-```
 # Wednesday, June 25th
 ## Performance with stencil in Sycl 
 Class : https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/
