@@ -44,7 +44,10 @@ cp -r /home/Examples /path/to/the/desired/directory
 # Wednesday, June 25th
 ## Performance with stencil in Sycl 
 Class : https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/
-Run container on Juliet (on a compute node):: 
+
+For this class, you need to clone the class from the Github, the container does not have them. You can do so from within the container.
+
+Run container on Juliet (on a compute node):
 ```
 apptainer shell /projects/m25065-students/containers/stencil_sycl.sif
 ```
