@@ -127,7 +127,7 @@ We recommend you clone the repository before starting the container as the conta
 
 OR
 
-- ALternatively, you can use our script:
+- Alternatively, you can use our script:
   
   ```
   bash /projects/m25065-students/scripts/python_cpu.sh
