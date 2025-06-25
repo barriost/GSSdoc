@@ -1,1 +1,40 @@
+# Previous classes
+This file contains classes from the previous days of the Gray Scott School. For the classes of the current/upcoming days, see [this file](https://github.com/barriost/GSSdoc/blob/main/class_specs.md)
 
+# Monday, June 23rd
+
+## __Welcome, Gray Scott Introduction, CPU Architecture, Vectorization VS Parallelization__
+There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
+
+## Compiler optimisation
+Class : https://cta-lapp.pages.in2p3.fr/COURS/COMPILER_OPTIMISATION/index.html
+Run container on Juliet (on a compute node): 
+```
+apptainer shell /projects/m25065-students/containers/compiler.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/compiler.sh
+```
+
+## Did you say Unit Testing ?
+There is no container. Please follow teacher instructions. If running code is required, please make sure you're on a compute node.
+
+# Tuesday, June 24th
+
+## C++ 17/20/23 on CPU (and pyramid)
+Class : https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
+Run container on Juliet (on a compute node):: 
+```
+apptainer shell /projects/m25065-students/containers/cpp_on_cpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/cpp_on_cpu.sh
+```
+
+The source code for this class is inside the container at /home/Examples. It can be copied to your directory with the cp command
+
+```
+cp -r /home/Examples /path/to/the/desired/directory
+```
