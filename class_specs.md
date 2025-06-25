@@ -66,7 +66,16 @@ Example:
 ```
 
 ## Performance with stencil in Fortran
-TBA
+Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
+
+Run container on Juliet (on a compute node):
+```
+apptainer shell /projects/m25065-students/containers/stencil_fortran.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/stencil_fortran.sh
+```  
 
 ## Memory Profiling 
 Class : 
