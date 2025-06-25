@@ -155,8 +155,13 @@ In case of any issue, do not hesitate to ask for help in the #romeo-support chan
 # Monday, June 30th
 ## C++ 20 Computing with Eve + Kiwaku
 Class: https://events.codereckons.com/
+### Avoid GPU issues
+To avoid issues with our MIG configuration, please run the following command after starting the srun
 
-Run container on Juliet (on a compute node):
+```
+ [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
+```
+### Run container on Juliet (on a compute node):
 ```
 apptainer shell --nv /projects/m25065-students/containers/eve_kiwaku.sif
 ```
@@ -164,17 +169,17 @@ OR
 ```
 bash /projects/m25065-students/scripts/eve_kiwaku.sh
 ```
+
+
+## C++17/20/23 on GPU with NVC++
+Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
 ### Avoid GPU issues
 To avoid issues with our MIG configuration, please run the following command after starting the srun
 
 ```
  [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
 ```
-
-## C++17/20/23 on GPU with NVC++
-Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
-
-Run container on Juliet (on a compute node):
+### Run container on Juliet (on a compute node):
 ```
 apptainer shell --nv /projects/m25065-students/containers/cpp_on_gpu.sif
 ```
@@ -182,6 +187,9 @@ OR
 ```
 bash /projects/m25065-students/scripts/cpp_on_gpu.sh
 ```
+
+
+## Optimisation Cubic Root
 ### Avoid GPU issues
 To avoid issues with our MIG configuration, please run the following command after starting the srun
 
@@ -189,10 +197,9 @@ To avoid issues with our MIG configuration, please run the following command aft
  [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
 ```
 
-## Optimisation Cubic Root
 Class: https://cta-lapp.pages.in2p3.fr/COURS/OPTIMISATION_RACINE_CUBIQUE/
 
-Run container on Juliet (on a compute node):
+### Run container on Juliet (on a compute node):
 ```
 apptainer shell --nv /projects/m25065-students/containers/cubic_root.sif
 ```
@@ -201,15 +208,16 @@ OR
 bash /projects/m25065-students/scripts/cubic_root.sh
 ```
 
+
+# Tuesday, July 1st
+
+## Sycl on GPU
 ### Avoid GPU issues
 To avoid issues with our MIG configuration, please run the following command after starting the srun
 
 ```
  [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
 ```
-
-# Tuesday, July 1st
-## Sycl on GPU
 Class: https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/GrayScottSyclSetup/-/blob/main/README.md?ref_type=heads
 
 Run container on Juliet (on a compute node):
@@ -221,17 +229,17 @@ OR
 bash /projects/m25065-students/scripts/sycl_gpu.sh
 ```
 
+
+
+## Performance with stencil in Fortran
+Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
 ### Avoid GPU issues
 To avoid issues with our MIG configuration, please run the following command after starting the srun
 
 ```
  [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
 ```
-
-## Performance with stencil in Fortran
-Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
-
-Run container on Juliet (on a compute node):
+### Run container on Juliet (on a compute node):
 ```
 apptainer shell --nv /projects/m25065-students/containers/fortran_gpu.sif
 ```
@@ -240,18 +248,18 @@ OR
 bash /projects/m25065-students/scripts/fortran_gpu.sh
 ```
 
+
+
+# Wednesday, July 2nd
+## Rust on GPU:
+Class:  https://gitlab.in2p3.fr/grasland/numerical-rust-gpu
 ### Avoid GPU issues
 To avoid issues with our MIG configuration, please run the following command after starting the srun
 
 ```
  [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
 ```
-
-# Wednesday, July 2nd
-## Rust on GPU:
-Class:  https://gitlab.in2p3.fr/grasland/numerical-rust-gpu
-
-Run container on Juliet (on a compute node):
+### Run container on Juliet (on a compute node):
 ```
 apptainer shell --nv /projects/m25065-students/containers/rust_gpu.sif
 ```
@@ -259,6 +267,12 @@ OR
 ```
 bash /projects/m25065-students/scripts/rust_gpu.sh
 ```  
+
+
+# Thursday, July 3rd
+## Python on GPU 
+Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
+
 ### Avoid GPU issues
 To avoid issues with our MIG configuration, please run the following command after starting the srun
 
@@ -266,6 +280,23 @@ To avoid issues with our MIG configuration, please run the following command aft
  [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
 ```
 
-# Thursday, July 3rd
-TBA
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv --bind=/usr/local/cuda:/usr/local/cuda,/apps/:/apps/ /projects/m25065-students/containers/python_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/python_gpu.sh
+```
+### Load the correct libraries
+
+Some libraries must be loaded by hand on Juliet. Please run these two commands to load them:
+
+```
+ source /apps/spack/spack/share/spack/setup-env.sh
+```
+and
+```
+ spack load cudnn@9.8.0.87-12
+```
 
