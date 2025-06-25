@@ -45,11 +45,15 @@ If you need a GPU, run the command
 srun --reservation=grayscott --partition=mesonet --account=m25065-students --time=10:00:00 -c 16 --mem=64G --gres=gpu:1 --pty /bin/bash
  ```
 
+Both commands will open a terminal on a compute node.
+
+### Avoid GPU issues
 Due to a technical issue, for your job to properly take GPUs into account you will need to enter this command as soon as you connect to a compute node
 
-``` export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS ```
+```
+ [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
+```
 
-Both commands will open a terminal on a compute node.
 
 ### For podman users
 
