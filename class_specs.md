@@ -32,7 +32,7 @@ bash /projects/m25065-students/scripts/rust.sh
 Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
 
 This class uses Jupyter Lab, which will provide a web interface with the backend running on Juliet. You will need to use your own computer to visualize the interface.
-We recommend you clone the repository before starting the container as the container does not include git.
+We **strongly** recommend you clone the repository before starting the container as the container does not include git.
 
 ### Start container and Jupyter lab on Juliet (on a compute node):
 
