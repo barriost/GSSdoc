@@ -7,54 +7,6 @@ To know the basics, connected to Juliet itself and know the advice for all conta
 
 Reminder that all apptainer or bash commands need to be run on compute nodes.
 
-# Wednesday, June 25th
-## Performance with stencil in Sycl 
-Class : https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/
-
-For this class, you need to clone the class from the Github, the container does not have them. You can do so from within the container.
-
-Run container on Juliet (on a compute node):
-```
-apptainer shell /projects/m25065-students/containers/stencil_sycl.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/stencil_sycl.sh
-```
-*/!\ Juliet uses the Adaptive CPP version of the container. Please mention it if you report an issue to the teacher /!\\*
-
-### Differences with the Adaptive CPP container
-- The sycl-ls command does not exist
-- Whenever you require `icpx` or `icpx-cuda`, use `acpp` instead
-Example:
-```
-./coliru.bash acpp cpu
-```
-
-## Performance with stencil in Fortran
-Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
-
-Run container on Juliet (on a compute node):
-```
-apptainer shell /projects/m25065-students/containers/stencil_fortran.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/stencil_fortran.sh
-```  
-
-## Memory Profiling 
-Class : 
-Run container on Juliet (on a compute node):: 
-```
-apptainer shell /projects/m25065-students/containers/mem_profiling.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/mem_profiling.sh
-```  
-
-
 # Thursday, June 26th
 ## Rust on CPU 
 Class: https://gitlab.in2p3.fr/grasland/grayscott-with-rust 
