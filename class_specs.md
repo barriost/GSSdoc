@@ -13,9 +13,14 @@ Class: https://numerical-rust-cpu-81b2c3.pages.in2p3.fr/
 
 /!\ Apptainer is not recommended for the rust classes, we will be using podman. Remember the allocation request is different for podman
 
-Run container on Juliet (on a compute node):: 
+Run container on Juliet (on a compute node): 
+Place yourself on the desired directory and create the exercise directory
 ```
-podman run --rm -it docker://gitlab-registry.in2p3.fr/grasland/numerical-rust-cpu/rust_light:latest /bin/bash
+mkdir -p exercises
+```
+then run the podman container
+```
+podman run -it --rm -v "$(pwd)/exercises":/root/exercises gitlab-registry.in2p3.fr/grasland/numerical-rust-cpu/rust_light:latest
 ```
 OR
 ```
