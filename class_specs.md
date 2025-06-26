@@ -9,7 +9,7 @@ Reminder that all apptainer or bash commands need to be run on compute nodes.
 
 # Thursday, June 26th
 ## Rust on CPU 
-Class: https://gitlab.in2p3.fr/grasland/grayscott-with-rust 
+Class: https://numerical-rust-cpu-81b2c3.pages.in2p3.fr/
 
 /!\ Apptainer is not recommended for the rust classes, we will be using podman. Remember the allocation request is different for podman
 
