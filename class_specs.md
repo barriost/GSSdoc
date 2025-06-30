@@ -92,7 +92,9 @@ OR
 ```
 bash /projects/m25065-students/scripts/eve_kiwaku.sh
 ```
+### Compiling with Eve
 
+Eve requires C++20 or later, you might need to add the option `-std=c++20` to the compiler.
 
 ## C++17/20/23 on GPU with NVC++
 Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
