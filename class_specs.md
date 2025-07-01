@@ -59,7 +59,7 @@ To avoid issues with our MIG configuration, please run the following command aft
 ```
 ### Run container on Juliet (on a compute node):
 ```
-apptainer shell --nv /projects/m25065-students/containers/rust_gpu.sif
+apptainer shell --nv --bind=/usr/share/glvnd/:/usr/share/glvnd/ --env VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json rust_light_latest.sif
 ```
 OR
 ```
