@@ -7,65 +7,6 @@ To know the basics, connected to Juliet itself and know the advice for all conta
 
 Reminder that all apptainer or bash commands need to be run on compute nodes.
 
-# Monday, June 30th
-## C++ 20 Computing with Eve + Kiwaku
-Class: https://events.codereckons.com/
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
-
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
-### Run container on Juliet (on a compute node):
-```
-apptainer shell --nv /projects/m25065-students/containers/eve_kiwaku.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/eve_kiwaku.sh
-```
-### Compiling with Eve
-
-Eve requires C++20 or later, you might need to add the option `-std=c++20` to the compiler.
-
-## C++17/20/23 on GPU with NVC++
-Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
-
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
-### Run container on Juliet (on a compute node):
-```
-apptainer shell --nv /projects/m25065-students/containers/cpp_on_gpu.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/cpp_on_gpu.sh
-```
-
-
-## Optimisation Cubic Root
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
-
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
-
-Class: https://cta-lapp.pages.in2p3.fr/COURS/OPTIMISATION_RACINE_CUBIQUE/
-
-### Run container on Juliet (on a compute node):
-```
-apptainer shell --nv /projects/m25065-students/containers/cubic_root.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/cubic_root.sh
-```
-
-
 # Tuesday, July 1st
 
 ## Sycl on GPU
@@ -79,7 +20,7 @@ Class: https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/GrayScottSyclSetup/-/b
 
 Run container on Juliet (on a compute node):
 ```
-apptainer shell --nv /projects/m25065-students/containers/sycl_gpu.sif
+apptainer shell --nv /projects/m25065-students/containers/sycl_gpu_new.sif
 ```
 OR
 ```
