@@ -153,3 +153,62 @@ Finally, open your web browser and copy/paste the entire ` http://localhost:8xxx
 The jupyter interface should open soon.
 
 In case of any issue, do not hesitate to ask for help in the #romeo-support channel of the Gray Scott School Discord Server
+
+# Monday, June 30th
+## C++ 20 Computing with Eve + Kiwaku
+Class: https://events.codereckons.com/
+### Avoid GPU issues
+To avoid issues with our MIG configuration, please run the following command after starting the srun
+
+```
+ [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
+```
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/eve_kiwaku.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/eve_kiwaku.sh
+```
+### Compiling with Eve
+
+Eve requires C++20 or later, you might need to add the option `-std=c++20` to the compiler.
+
+## C++17/20/23 on GPU with NVC++
+Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
+### Avoid GPU issues
+To avoid issues with our MIG configuration, please run the following command after starting the srun
+
+```
+ [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
+```
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/cpp_on_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/cpp_on_gpu.sh
+```
+
+
+## Optimisation Cubic Root
+### Avoid GPU issues
+To avoid issues with our MIG configuration, please run the following command after starting the srun
+
+```
+ [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
+```
+
+Class: https://cta-lapp.pages.in2p3.fr/COURS/OPTIMISATION_RACINE_CUBIQUE/
+
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/cubic_root.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/cubic_root.sh
+```
+
