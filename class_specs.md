@@ -7,56 +7,12 @@ To know the basics, connected to Juliet itself and know the advice for all conta
 
 Reminder that all apptainer or bash commands need to be run on compute nodes.
 
-# Tuesday, July 1st
-
-## Sycl on GPU
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
-
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
-Class: https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/GrayScottSyclSetup/-/blob/main/README.md?ref_type=heads
-
-Run container on Juliet (on a compute node):
-```
-apptainer shell --nv /projects/m25065-students/containers/sycl_gpu_new.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/sycl_gpu.sh
-```
-
-
-
-## Performance with stencil in Fortran
-Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
-
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
-### Run container on Juliet (on a compute node):
-```
-apptainer shell --nv /projects/m25065-students/containers/fortran_gpu.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/fortran_gpu.sh
-```
-
 
 
 # Wednesday, July 2nd
 ## Rust on GPU:
 Class:  https://gitlab.in2p3.fr/grasland/numerical-rust-gpu
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
 
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
 ### Run container on Juliet (on a compute node):
 ```
 apptainer shell --nv --bind=/usr/share/glvnd/:/usr/share/glvnd/ --env VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json rust_light_latest.sif
@@ -71,12 +27,6 @@ bash /projects/m25065-students/scripts/rust_gpu.sh
 ## Python on GPU 
 Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
 
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
-
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
 
 ### Run container on Juliet (on a compute node):
 ```
