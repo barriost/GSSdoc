@@ -157,12 +157,7 @@ In case of any issue, do not hesitate to ask for help in the #romeo-support chan
 # Monday, June 30th
 ## C++ 20 Computing with Eve + Kiwaku
 Class: https://events.codereckons.com/
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
 
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
 ### Run container on Juliet (on a compute node):
 ```
 apptainer shell --nv /projects/m25065-students/containers/eve_kiwaku.sif
@@ -177,12 +172,7 @@ Eve requires C++20 or later, you might need to add the option `-std=c++20` to th
 
 ## C++17/20/23 on GPU with NVC++
 Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
 
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
 ### Run container on Juliet (on a compute node):
 ```
 apptainer shell --nv /projects/m25065-students/containers/cpp_on_gpu.sif
@@ -194,12 +184,7 @@ bash /projects/m25065-students/scripts/cpp_on_gpu.sh
 
 
 ## Optimisation Cubic Root
-### Avoid GPU issues
-To avoid issues with our MIG configuration, please run the following command after starting the srun
 
-```
- [[ -n "$SLURM_STEP_GPUS" ]] && export CUDA_VISIBLE_DEVICES=$SLURM_STEP_GPUS || export CUDA_VISIBLE_DEVICES=$SLURM_JOB_GPUS
-```
 
 Class: https://cta-lapp.pages.in2p3.fr/COURS/OPTIMISATION_RACINE_CUBIQUE/
 
@@ -211,4 +196,35 @@ OR
 ```
 bash /projects/m25065-students/scripts/cubic_root.sh
 ```
+
+# Tuesday, July 1st
+
+## Sycl on GPU
+
+Class: https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/GrayScottSyclSetup/-/blob/main/README.md?ref_type=heads
+
+Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/sycl_gpu_new.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/sycl_gpu.sh
+```
+
+
+
+## Performance with stencil in Fortran
+Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
+
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/fortran_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/fortran_gpu.sh
+```
+
+
 
