@@ -15,6 +15,7 @@ Reminder that all apptainer or bash commands need to be run on compute nodes.
 # Thursday, July 3rd
 ## Python on GPU 
 Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
+We strongly recommend you clone the repository before starting the container as the container does not include git
 
 
 ### Run container on Juliet (on a compute node):
