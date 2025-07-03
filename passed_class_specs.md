@@ -226,5 +226,16 @@ OR
 bash /projects/m25065-students/scripts/fortran_gpu.sh
 ```
 
+# Wednesday, July 2nd
+## Rust on GPU:
+Class:  https://gitlab.in2p3.fr/grasland/numerical-rust-gpu
 
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv --bind=/usr/share/glvnd/:/usr/share/glvnd/ --env VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json rust_light_latest.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/rust_gpu.sh
+```  
 
