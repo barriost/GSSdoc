@@ -9,18 +9,7 @@ Reminder that all apptainer or bash commands need to be run on compute nodes.
 
 
 
-# Wednesday, July 2nd
-## Rust on GPU:
-Class:  https://gitlab.in2p3.fr/grasland/numerical-rust-gpu
 
-### Run container on Juliet (on a compute node):
-```
-apptainer shell --nv --bind=/usr/share/glvnd/:/usr/share/glvnd/ --env VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json rust_light_latest.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/rust_gpu.sh
-```  
 
 
 # Thursday, July 3rd
@@ -30,7 +19,7 @@ Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
 
 ### Run container on Juliet (on a compute node):
 ```
-apptainer shell --nv --bind=/usr/local/cuda:/usr/local/cuda,/apps/:/apps/ /projects/m25065-students/containers/python_gpu.sif
+apptainer shell --nv --bind=/usr/local/cuda:/usr/local/cuda,/apps/:/apps/ --env LD_LIBRARY_PATH="/usr/local/cuda/targets/x86_64-linux/lib/:$LD_LIBRARY_PATH" /projects/m25065-students/containers/python_gpu.sif
 ```
 OR
 ```
