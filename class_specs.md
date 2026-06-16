@@ -8,11 +8,92 @@ To know the basics, connected to Juliet itself and know the advice for all conta
 Reminder that all apptainer or bash commands need to be run on compute nodes.
 
 
+# Monday, June 29th
+## C++ 20 Computing with Eve + Kiwaku
+Class: https://events.codereckons.com/
+
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/eve_kiwaku.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/eve_kiwaku.sh
+```
+### Compiling with Eve
+
+Eve requires C++20 or later, you might need to add the option `-std=c++20` to the compiler.
+
+## C++17/20/23 on GPU with NVC++
+Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
+
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/cpp_on_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/cpp_on_gpu.sh
+```
+
+
+## Optimisation Cubic Root
+
+
+Class: https://cta-lapp.pages.in2p3.fr/COURS/OPTIMISATION_RACINE_CUBIQUE/
+
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/cubic_root.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/cubic_root.sh
+```
+
+# Tuesday, June 30th
+
+## Sycl on GPU
+
+Class: https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/GrayScottSyclSetup/-/blob/main/README.md?ref_type=heads
+
+Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/sycl_gpu_new.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/sycl_gpu.sh
+```
 
 
 
+## Performance with stencil in Fortran
+Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
 
-# Thursday, July 3rd
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/fortran_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/fortran_gpu.sh
+```
+
+# Wednesday, July 1st
+## Rust on GPU:
+Class:  https://gitlab.in2p3.fr/grasland/numerical-rust-gpu
+
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv --bind=/usr/share/glvnd/:/usr/share/glvnd/ --env VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json rust_light_latest.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/rust_gpu.sh
+```  
+
+# Thursday, July 2nd
 ## Python on GPU 
 Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
 We strongly recommend you clone the repository before starting the container as the container does not include git
