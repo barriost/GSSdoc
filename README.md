@@ -13,7 +13,7 @@ Then, enter your password when prompt. Your typing may not show on your terminal
 
 ## Access your classes
 
-Most of the classes use apptainer containers. These containers are on the directory /projects/m25065/containers/
+Most of the classes use apptainer containers. These containers are on the directory /projects/m26116/containers/
 
 The file at path `/projects/m26116/container_list.txt` contains the association between a class and a container.
 
