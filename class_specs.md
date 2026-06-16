@@ -36,21 +36,6 @@ OR
 bash /projects/m25065-students/scripts/cpp_on_gpu.sh
 ```
 
-
-## Optimisation Cubic Root
-
-
-Class: https://cta-lapp.pages.in2p3.fr/COURS/OPTIMISATION_RACINE_CUBIQUE/
-
-### Run container on Juliet (on a compute node):
-```
-apptainer shell --nv /projects/m25065-students/containers/cubic_root.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/cubic_root.sh
-```
-
 # Tuesday, June 30th
 
 ## Sycl on GPU
