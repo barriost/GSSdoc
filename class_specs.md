@@ -80,7 +80,7 @@ Class : https://cta-lapp.pages.in2p3.fr/COURS/GRAY_SCOTT_REVOLUTIONS/GrayScott20
 
 ### Run container on Juliet (on a compute node):
 ```
-apptainer shell --nv /projects/m25065-students/containers/fortran_gpu.sif
+apptainer shell --nv /projects/m25065-students/containers/kokkos_gpu.sif
 ```
 OR
 ```
