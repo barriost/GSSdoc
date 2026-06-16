@@ -36,21 +36,6 @@ OR
 bash /projects/m25065-students/scripts/cpp_on_gpu.sh
 ```
 
-# Tuesday, June 30th
-
-## Sycl on GPU
-
-Class: https://gitlab.in2p3.fr/CodeursIntensifs/grayscott/GrayScottSyclSetup/-/blob/main/README.md?ref_type=heads
-
-Run container on Juliet (on a compute node):
-```
-apptainer shell --nv /projects/m25065-students/containers/sycl_gpu_new.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/sycl_gpu.sh
-```
-
 ## Python on GPU 
 Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
 We strongly recommend you clone the repository before starting the container as the container does not include git
@@ -64,17 +49,16 @@ OR
 ```
 bash /projects/m25065-students/scripts/python_gpu.sh
 ```
-### Load the correct libraries
+### Adapt the files for the container.
 
-Some libraries must be loaded by hand on Juliet. Please run these two commands to load them:
+Some files must be changed for the codes to work on the container:
 
-```
- source /apps/spack/spack/share/spack/setup-env.sh
-```
-and
-```
- spack load cudnn@9.8.0.87-12
-```
+In the GPU/cluster folder:
+
+- We recommend you do not use the `apptainer run_gpu.sh` file. You can use `bash script_inside_apptainer.sh` directly inside the container.
+- In `script_inside_apptainer.sh` replace the value of PREFIX with the absolute path of your `gray-scott-python` repository
+
+
 
 
 
