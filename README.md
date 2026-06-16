@@ -1,6 +1,6 @@
 
-# Attend GrayScott school with Juliet
-These pages are here to help you use the Juliet cluster for the GrayScott school. If you run into any trouble, do not hesitate to ask questions on school #romeo-support channel on the official Gray Scott Schoot server.
+# Attend gray_scott_school  school with Juliet
+These pages are here to help you use the Juliet cluster for the gray_scott_school  school. If you run into any trouble, do not hesitate to ask questions on school #romeo-support channel on the official Gray Scott Schoot server.
 
 ## Connect to juliet
 You have received a login and password by e-mail. You may connect to juliet using these logins and password by typing in a command prompt (ex: PowerShell for windows)
@@ -40,7 +40,7 @@ srun --reservation=gray_scott_school --partition=mesonet --account=m26116 --time
 If you need a GPU, run the command 
 
 ``` 
-srun --reservation=grayscott --partition=mesonet --account=m26116 --time=10:00:00 -c 16 --mem=64G --gres=gpu:1 --pty /bin/bash
+srun --reservation=gray_scott_school  --partition=mesonet --account=m26116 --time=10:00:00 -c 16 --mem=64G --gres=gpu:1 --pty /bin/bash
  ```
 
 Both commands will open a terminal on a compute node.
@@ -55,20 +55,20 @@ Due to a technical issue, for your job to properly take GPUs into account you wi
 
 ### For podman users
 
-While we mainly use apptainer, you can use podman on every container of the school if you know how to use it. You will need the adresse on the [Container List time table](https://cta-lapp.pages.in2p3.fr/cours/gray_scott_revolutions/grayscottrevolution/7-5161.html)
+While we mainly use apptainer, you can use podman on every container of the school if you know how to use it. You will need the adresse on the [Container List time table](https://cta-lapp.pages.in2p3.fr/COURS/GRAY_SCOTT_REVOLUTIONS/GrayScott2026/web_9.html#1766)
 
-With a few exceptions containers have not been tested with podman so choose this option if you know what you are doing.
+With a few exceptions containers have not been tested with podman so only choose this option if you know what you are doing.
 
 If you want to use podman use `salloc` instead of `srun`
 
 ``` 
-salloc  --reservation=grayscott --partition=mesonet --account=m26116 --time=10:00:00 -c 16 --mem=64G
+salloc  --reservation=gray_scott_school  --partition=mesonet --account=m26116 --time=10:00:00 -c 16 --mem=64G
  ```
 
 OR
 
 ``` 
-salloc --reservation=grayscott --partition=mesonet --account=m26116 --time=10:00:00 --mem=64G --gres=gpu:1
+salloc --reservation=gray_scott_school  --partition=mesonet --account=m26116 --time=10:00:00 --mem=64G --gres=gpu:1
  ```
 
 then
