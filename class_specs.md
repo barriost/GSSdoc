@@ -5,7 +5,7 @@ For classes that were given on the previous days, see [this file.](https://githu
 
 To know the basics, connected to Juliet itself and know the advice for all containers, please refer to [this file](https://github.com/barriost/GSSdoc/blob/main/README.md).
 
-Reminder that all apptainer or bash commands need to be run on compute nodes.
+/!\ Remember that all apptainer or bash commands need to be run on compute nodes.
 
 
 # Monday, June 29th
