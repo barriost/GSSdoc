@@ -35,7 +35,7 @@ OR
 ```
 bash /projects/m25065-students/scripts/cpp_on_gpu.sh
 ```
-
+#Tuesday, June 30th
 ## Python on GPU 
 Class: https://gitlab.in2p3.fr/alice.faure/gray-scott-python
 We strongly recommend you clone the repository before starting the container as the container does not include git
