@@ -61,8 +61,8 @@ In the GPU/cluster folder:
 
 
 
-
-## Performance with stencil in Fortran
+# Wednesday, July 1st
+## Fortran 2018 on GPU
 Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
 
 ### Run container on Juliet (on a compute node):
@@ -72,19 +72,6 @@ apptainer shell --nv /projects/m25065-students/containers/fortran_gpu.sif
 OR
 ```
 bash /projects/m25065-students/scripts/fortran_gpu.sh
-```
-
-# Wednesday, July 1st
-## Rust on GPU:
-Class:  https://gitlab.in2p3.fr/grasland/numerical-rust-gpu
-
-### Run container on Juliet (on a compute node):
-```
-apptainer shell --nv --bind=/usr/share/glvnd/:/usr/share/glvnd/ --env VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json rust_light_latest.sif
-```
-OR
-```
-bash /projects/m25065-students/scripts/rust_gpu.sh
 ```
 
 # Thursday, July 2nd
