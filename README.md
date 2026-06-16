@@ -15,7 +15,7 @@ Then, enter your password when prompt. Your typing may not show on your terminal
 
 Most of the classes use apptainer containers. These containers are on the directory /projects/m25065/containers/
 
-The file at path `/projects/m25065-students/container_list.txt` contains the association between a class and a container.
+The file at path `/projects/m26116/container_list.txt` contains the association between a class and a container.
 
 You can also access specific instructions for each class [here](https://github.com/barriost/GSSdoc/blob/main/class_specs.md)
 
@@ -36,13 +36,13 @@ To connect to a compute node you will need to use slurm
 By default you can run the command:
 
 ```
-srun --reservation=grayscott --partition=mesonet --account=m25065-students --time=10:00:00 --mem=64G -c 16 --pty /bin/bash
+srun --reservation=grayscott --partition=mesonet --account=m26116 --time=10:00:00 --mem=64G -c 16 --pty /bin/bash
  ```
 
 If you need a GPU, run the command 
 
 ``` 
-srun --reservation=grayscott --partition=mesonet --account=m25065-students --time=10:00:00 -c 16 --mem=64G --gres=gpu:1 --pty /bin/bash
+srun --reservation=grayscott --partition=mesonet --account=m26116 --time=10:00:00 -c 16 --mem=64G --gres=gpu:1 --pty /bin/bash
  ```
 
 Both commands will open a terminal on a compute node.
@@ -64,13 +64,13 @@ With a few exceptions containers have not been tested with podman so choose this
 If you want to use podman use `salloc` instead of `srun`
 
 ``` 
-salloc  --reservation=grayscott --partition=mesonet --account=m25065-students --time=10:00:00 -c 16 --mem=64G
+salloc  --reservation=grayscott --partition=mesonet --account=m26116 --time=10:00:00 -c 16 --mem=64G
  ```
 
 OR
 
 ``` 
-salloc --reservation=grayscott --partition=mesonet --account=m25065-students --time=10:00:00 --mem=64G --gres=gpu:1
+salloc --reservation=grayscott --partition=mesonet --account=m26116 --time=10:00:00 --mem=64G --gres=gpu:1
  ```
 
 then
@@ -80,8 +80,6 @@ ssh julietX
 ```
 
 where julietX can be `juliet2`, `juliet3` or `juliet4`
-
-**NOTE**: For the RUST classes, it is recommended to use this approach.
 
 
 ## Run the containers
@@ -95,7 +93,7 @@ apptainer shell path/to/container.sif
 Alternatively, you can run a bash script that will do it for you. Bash scripts for classes are available at
 
 ``` 
-bash /projects/m25065-students/scripts/
+bash /projects/m26116/scripts/
 ```
 
 and have the same name as the container with .sh instead of .sif
