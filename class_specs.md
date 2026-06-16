@@ -75,3 +75,15 @@ bash /projects/m25065-students/scripts/fortran_gpu.sh
 ```
 
 # Thursday, July 2nd
+## Kokkos on GPU
+Class : https://cta-lapp.pages.in2p3.fr/COURS/GRAY_SCOTT_REVOLUTIONS/GrayScott2026/web_2-26.html
+
+### Run container on Juliet (on a compute node):
+```
+apptainer shell --nv /projects/m25065-students/containers/fortran_gpu.sif
+```
+OR
+```
+bash /projects/m25065-students/scripts/fortran_gpu.sh
+```
+
