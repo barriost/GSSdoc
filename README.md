@@ -15,8 +15,6 @@ Then, enter your password when prompt. Your typing may not show on your terminal
 
 Most of the classes use apptainer containers. These containers are on the directory /projects/m26116/containers/
 
-The file at path `/projects/m26116/container_list.txt` contains the association between a class and a container.
-
 You can also access specific instructions for each class [here](https://github.com/barriost/GSSdoc/blob/main/class_specs.md)
 
 ## Connect to a compute node
@@ -36,7 +34,7 @@ To connect to a compute node you will need to use slurm
 By default you can run the command:
 
 ```
-srun --reservation=grayscott --partition=mesonet --account=m26116 --time=10:00:00 --mem=64G -c 16 --pty /bin/bash
+srun --reservation=gray_scott_school --partition=mesonet --account=m26116 --time=10:00:00 --mem=64G -c 16 --pty /bin/bash
  ```
 
 If you need a GPU, run the command 
