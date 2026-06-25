@@ -9,20 +9,22 @@ To know the basics, connected to Juliet itself and know the advice for all conta
 
 
 # Monday, June 29th
-## C++ 20 Computing with Eve + Kiwaku
+## C++ 20 Computing with Eve
 Class: https://events.codereckons.com/
 
 ### Run container on Juliet (on a compute node):
 ```
-apptainer shell --nv /projects/m25065-students/containers/eve_kiwaku.sif
+apptainer shell --nv /projects/m26166/containers/eve.sif
 ```
 OR
 ```
-bash /projects/m25065-students/scripts/eve_kiwaku.sh
+bash /projects/m25065-students/scripts/eve.sh
 ```
 ### Compiling with Eve
 
 Eve requires C++20 or later, you might need to add the option `-std=c++20` to the compiler.
+
+To void errors we recommend using the following options for the compilation `-O3 -std=c++20 -DNDEBUG -march=native`
 
 ## C++17/20/23 on GPU with NVC++
 Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
