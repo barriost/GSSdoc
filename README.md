@@ -97,3 +97,9 @@ bash /projects/m26116/scripts/
 and have the same name as the container with .sh instead of .sif
 
 ** /!\ MAKE SURE YOU ARE CONNECTED TO A COMPUTE NODE BEFORE STARTING A CONTAINER OR A SCRIPT /!\ **
+
+## Get the files from the container
+
+If you use the script, you will need to copy the files from their location on the container to your home directory, otherwise you will not be able to change them.
+
+If you want to edit the files in the container directly, you can add the --writeable-tmpfs option to the apptainer shell command.
