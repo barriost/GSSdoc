@@ -57,8 +57,8 @@ Some files must be changed for the codes to work on the container:
 
 In the GPU/cluster folder:
 
-- We recommend you do not use the `apptainer run_gpu.sh` file. You can use `bash script_inside_apptainer.sh` directly inside the container.
-- In `script_inside_apptainer.sh` replace the value of PREFIX with the absolute path of your `gray-scott-python` repository
+- You only need to run the `script_level3_in_apptainer.sh` with the path to `gray_scott_python` as the first argument and `/usr/local/cuda` as the second argument.
+- Example of use, assuming you current directory is ~/gray_scott_python/GPU/cluster : `bash script_level3_in_apptainer.sh ~/gray_scott_python /usr/local/cuda`
 
 
 
@@ -86,6 +86,6 @@ apptainer shell --nv /projects/m25065-students/containers/kokkos_gpu.sif
 ```
 OR
 ```
-bash /projects/m25065-students/scripts/fortran_gpu.sh
+bash /projects/m25065-students/scripts/kokkos_gpu.sh
 ```
 
