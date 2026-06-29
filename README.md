@@ -97,7 +97,7 @@ apptainer shell path/to/container.sif
 Alternatively, you can run a bash script that will do it for you. Bash scripts for classes are available at
 
 ``` 
-bash /projects/m26116/scripts/
+bash /projects/m26116/scripts/script.sh
 ```
 
 and have the same name as the container with .sh instead of .sif
