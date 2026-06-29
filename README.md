@@ -9,7 +9,13 @@ You have received a login and password by e-mail. You may connect to juliet usin
 ssh username@juliet.mesonet.fr
 ```
 
-Then, enter your password when prompt. Your typing may not show on your terminal, this is intended.
+You should not be prompted for a password. If you are, try to specifcy the type of ssh key with
+
+```
+ssh -i path/to/your/public/ssh_key username@juliet.mesonet.fr
+```
+
+If you are still prompted for a password, check if your ssh key was correctly registered or contact support.
 
 ## Access your classes
 
