@@ -49,7 +49,7 @@ apptainer shell --nv --bind=/usr/local/cuda:/usr/local/cuda,/apps/:/apps/ --env 
 ```
 OR
 ```
-bash /projects/m25065-students/scripts/python_gpu.sh
+bash /projects/m26116/scripts/python_gpu.sh
 ```
 ### Adapt the files for the container.
 
