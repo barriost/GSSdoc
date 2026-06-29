@@ -73,7 +73,7 @@ apptainer shell --nv /projects/m26166/containers/fortran_gpu.sif
 ```
 OR
 ```
-bash /projects/m26166s/scripts/fortran_gpu.sh
+bash /projects/m26166/scripts/fortran_gpu.sh
 ```
 
 # Thursday, July 2nd
