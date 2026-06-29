@@ -45,7 +45,7 @@ We strongly recommend you clone the repository before starting the container as 
 
 ### Run container on Juliet (on a compute node):
 ```
-apptainer shell --nv --bind=/usr/local/cuda:/usr/local/cuda,/apps/:/apps/ --env LD_LIBRARY_PATH="/usr/local/cuda/targets/x86_64-linux/lib/:$LD_LIBRARY_PATH" /projects/m25065-students/containers/python_gpu.sif
+apptainer shell --nv --bind=/usr/local/cuda:/usr/local/cuda,/apps/:/apps/ --env LD_LIBRARY_PATH="/usr/local/cuda/targets/x86_64-linux/lib/:$LD_LIBRARY_PATH" /projects/m26116/containers/python_gpu.sif
 ```
 OR
 ```
