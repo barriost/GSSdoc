@@ -18,7 +18,7 @@ apptainer shell --nv /projects/m26166/containers/eve.sif
 ```
 OR
 ```
-bash /projects/m25065-students/scripts/eve.sh
+bash /projects/m26166/scripts/eve.sh
 ```
 ### Compiling with Eve
 
@@ -31,11 +31,11 @@ Class: https://cta-lapp.pages.in2p3.fr/COURS/PerformanceWithLayoutAndStencil
 
 ### Run container on Juliet (on a compute node):
 ```
-apptainer shell --nv /projects/m25065-students/containers/cpp_on_gpu.sif
+apptainer shell --nv /projects/m26166/containers/cpp_on_gpu.sif
 ```
 OR
 ```
-bash /projects/m25065-students/scripts/cpp_on_gpu.sh
+bash /projects/m26166/scripts/cpp_on_gpu.sh
 ```
 # Tuesday, June 30th
 ## Python on GPU 
@@ -69,11 +69,11 @@ Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
 
 ### Run container on Juliet (on a compute node):
 ```
-apptainer shell --nv /projects/m25065-students/containers/fortran_gpu.sif
+apptainer shell --nv /projects/m26166/containers/fortran_gpu.sif
 ```
 OR
 ```
-bash /projects/m25065-students/scripts/fortran_gpu.sh
+bash /projects/m26166s/scripts/fortran_gpu.sh
 ```
 
 # Thursday, July 2nd
@@ -82,10 +82,10 @@ Class : https://cta-lapp.pages.in2p3.fr/COURS/GRAY_SCOTT_REVOLUTIONS/GrayScott20
 
 ### Run container on Juliet (on a compute node):
 ```
-apptainer shell --nv /projects/m25065-students/containers/kokkos_gpu.sif
+apptainer shell --nv /projects/m26166/containers/kokkos_gpu.sif
 ```
 OR
 ```
-bash /projects/m25065-students/scripts/kokkos_gpu.sh
+bash /projects/m26166/scripts/kokkos_gpu.sh
 ```
 
