@@ -9,7 +9,7 @@ You have received a login and password by e-mail. You may connect to juliet usin
 ssh username@juliet.mesonet.fr
 ```
 
-You should not be prompted for a password. If you are, try to specifcy the type of ssh key with
+You should not be prompted for a password for juliet (you might still be prompted for a password if your ssh key is password protected). If you are, try to specifcy the type of ssh key with
 
 ```
 ssh -i path/to/your/public/ssh_key username@juliet.mesonet.fr
