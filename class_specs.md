@@ -32,8 +32,6 @@ In the GPU/cluster folder:
 - Example of use, assuming you current directory is ~/gray_scott_python/GPU/cluster : `bash script_level3_in_apptainer.sh ~/gray_scott_python /usr/local/cuda`
 
 
-
-
 # Wednesday, July 1st
 ## Fortran 2018 on GPU
 Class : https://gitlab.in2p3.fr/lafage/GrayScottFortranTuto
@@ -46,6 +44,8 @@ OR
 ```
 bash /projects/m26166/scripts/fortran_gpu.sh
 ```
+
+/!\ To allow nvfortran to be recognized inside the container you might need to set the right environment variables by running `source` on the file at `Examples/GPU`
 
 # Thursday, July 2nd
 ## Kokkos on GPU
