@@ -35,4 +35,5 @@ OR
 ```
 bash /projects/m26166/scripts/kokkos_gpu.sh
 ```
+The course files are inside the container. We recommand you copy them to your home (this can be done from inside the container) before working to prevent any data loss.
 
